@@ -33,7 +33,7 @@ var transport = nodemailer.createTransport("SMTP", {
             <pre class="code">
 config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
-        :address => <strong>"localhost"</strong>,
+        :address => <strong>{{ config.smtpName }}</strong>,
         :port => <strong>{{ config.smtpPort }}</strong>
     }</pre>
         </div>
